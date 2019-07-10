@@ -1,9 +1,7 @@
 #!/bin/sh
-
-. ~/data/data/scripts/env.sh
-
 cd ../
 
-ls | grep $FILE > scripts/out.txt
 
+echo array_one
 
+#ls | grep HPdisk001  > scripts/out.txt
