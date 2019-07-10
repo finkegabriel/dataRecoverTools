@@ -14,9 +14,9 @@ def main():
             print(x)
             i = f"cd ../ && ls | grep {x}"
             cmd = f"cd ../ && cat {x} | strings > scripts/{x}"
-            #cmdd = f"cd ../ && cat {x} |  >>  scripts/runList.txt "
-            
-            print(cmd)
+            fs = f"{cmd} > scripts/runList.txt"
+            print(fs)
+            os.system(fs)
             time.sleep(2)
             
 main()
